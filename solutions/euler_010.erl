@@ -295,7 +295,7 @@ euler16() ->
 % letters. The use of "and" when writing out numbers is in compliance with
 % British usage.
 euler17() ->
-  todo.
+  not_doing_this.
 
 % By starting at the top of the triangle below and moving to adjacent numbers on
 % the row below, the maximum total from top to bottom is 23.
