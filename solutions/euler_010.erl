@@ -4,7 +4,8 @@
 euler10() ->
   todo.
 
-% In the 20×20 grid below, four numbers along a diagonal line have been marked in red.
+% In the 20×20 grid below, four numbers along a diagonal line have been marked
+% in red.
 % 08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 % 49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
 % 81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
@@ -262,7 +263,8 @@ euler13() ->
 % Using the rule above and starting with 13, we generate the following sequence: 
 % 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
 % It can be seen that this sequence (starting at 13 and finishing at 1) contains
-% 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.
+% 10 terms. Although it has not been proved yet (Collatz Problem), it is thought
+% that all starting numbers finish at 1.
 % 
 % Which starting number, under one million, produces the longest chain?
 % 
@@ -282,7 +284,8 @@ euler15() ->
 % 
 % What is the sum of the digits of the number 2^1000?
 euler16() ->
-  todo.
+  lists:foldl(fun(N, Acc) -> Acc + N - $0 end, 0,
+              integer_to_list(trunc(math:pow(2, 1000)))).
 
 % If the numbers 1 to 5 are written out in words: one, two, three, four, five,
 % then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
